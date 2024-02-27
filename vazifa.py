@@ -14,24 +14,17 @@ class Computer:
         self.hdd = hdd
         self.rangi = rangi
     def komp_info(self):
-        if self.kompnomi == str:
-            print(f"Compyuter nomi -> {self.kompnomi}")
-        elif self.ozu == int:
-            print(f"Comyuter Tezkor hotirasi -> {self.ozu}")
-        elif self.kadrlar_soni == int:
-            print(f"Compyuter Ekrani suratlari yangilanish tezligi yani (FPS) -> {self.kadrlar_soni}")
-        elif self.ishlab_ch_yili == int:
-            print(f"Compyuter ishlab chiqarilgan yili -> {self.ishlab_ch_yili}")
-        elif self.rangi == str:
-            print(f"Copyuter rangi -> {self.rangi}")
-        elif self.monitor == str:
-            print(f"Monitor olchami -> {self.monitor}")
-        elif self.narxi == int:
-            print(f"Compyuter narxi -> {self.narxi}")
-    def qoshimcha_narsalar(self):
-        if self.mishka_n_ == str:
-            print(f"Compyuter mishkasi turi -> {self.mishka_n_}")
-        elif self.rgb == bool:
-            print(f"Compyuter klaviaturasi RGBsi bormi -> {self.rgb}")
+            return f"""
+            Compyuter nomi -> {self.kompnomi}
+            Comyuter Tezkor hotirasi -> {self.ozu}
+            Compyuter Ekrani suratlari yangilanish tezligi yani (FPS) -> {self.kadrlar_soni}
+            Compyuter ishlab chiqarilgan yili -> {self.ishlab_ch_yili}"
+            Copyuter rangi -> {self.rangi}
+            Monitor olchami -> {self.monitor}
+            Compyuter narxi -> {self.narxi}
+            Compyuter mishkasi turi -> {self.mishka_n_}
+            Compyuter klaviaturasi RGBsi bormi -> {self.rgb}"""
+            
 
 logitech = Computer(int(input("Ozu olchami ->")),input("Monitor o'lchamini kiriting -> "), int(input("Kadrlar sonini kiriting -> ")), input("Compyuter nomini kiriting -> "), int(input("Compyuter ishlab chiqarilgan yili ->")), int(input("Compyuter Narxini kiriting -> ")), input("Mishka markasini kiriting -> "),bool(input("Klaviatura RGB bormi yoqmi, bolsa True. yoq bolsa False ->")),int(input("HDD olchamini kiriting -> ")),input("Compyuter rangini kiriting ->"))
+print(logitech.komp_info())
