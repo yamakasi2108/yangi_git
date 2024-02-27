@@ -14,7 +14,10 @@ class car:
     def Car_ishlabchiqilgan_Yili(self):
         return f"Car_Ishlab_Chiqilgan_Yili -> {self.ishlab}"
 lamborgini = car(Name="Lambargini Aventador", color="Black",ishlab_chiqilgan_Yili=1991)
+ferrari = car(Name="Ferrari alambalo",color="Red",ishlab_chiqilgan_Yili=1582)
+print(ferrari.Car_Name())
+print(ferrari.Car_Color())
+print(lamborgini.Car_ishlabchiqilgan_Yili())
 print(lamborgini.Car_Name())
 print(lamborgini.Car_Color())
 print(lamborgini.Car_ishlabchiqilgan_Yili())
-
